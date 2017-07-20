@@ -26,7 +26,6 @@ gulp.task('watch', ['browserSync', 'sass', 'scripts'], function () {
     gulp.watch('app/styles/**/*.scss', ['sass']);
     gulp.watch('app/scripts/**/*.js', ['scripts']);
     gulp.watch('app/*.html', browserSync.reload);
-    // Other watchers
 })
 
 gulp.task('browserSync', function () {
@@ -38,22 +37,4 @@ gulp.task('browserSync', function () {
 })
 
 
-
-
 gulp.task('default', ['watch']);
-// var gulp = require('gulp'),
-//     watch = require('gulp-watch');
-
-// gulp.task('stream', function () {
-//     // Endless stream mode 
-//     return watch('styles/**/*.css', { ignoreInitial: false })
-//         .pipe(gulp.dest('build'));
-// });
-
-// gulp.task('callback', function () {
-//     // Callback mode, useful if any plugin in the pipeline depends on the `end`/`flush` event 
-//     return watch('css/**/*.css', function () {
-//         gulp.src('css/**/*.css')
-//             .pipe(gulp.dest('build'));
-//     });
-// });
