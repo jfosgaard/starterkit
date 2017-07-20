@@ -1,0 +1,12 @@
+# NODEJS
+node_modules/
+bower_components/
+*.log
+
+
+# WebStorm / IntelliJ settings
+.idea/
+
+
+# THIS PROJECT
+dist
